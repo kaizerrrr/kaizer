@@ -1,0 +1,104 @@
+types_of_goods = [
+    ["артефакты"], 
+    ["доспехи"],
+    ["мечи"], 
+    ["расходники"],
+    ["отвергнутое"]
+]
+rares = [
+    ["Реликтовый"],
+    ["Божественный"],
+    ["Легендарные","Великие предметы"],
+    ["Гранд-Мастерский"],
+    ["Проклятые"]
+]
+items = [
+    ["Жезл Суккубы", "Посох Архимага", "Посох Аргарота" ],
+    ["Шипастый Доспех", "Сет Доблесть Ингвара", "Доспех Серафима", "Доспех Высшего Демона"],
+    ["Обычный меч", "Меч Гарроша", "Погибель", "Каратель", "Лунная Слеза"],
+    ["зелье высшего исцеления", "зелье восстановления маны", "зелье возможностей"],
+    ["Кольцо Забытого Бога?????"]
+]
+Valor_Points = 20000
+storage = []
+def view_tog():
+    print("Виды вещей:")
+    for i, tog in enumerate(types_of_goods):
+        print(f"{i + 1}. {tog}")
+def view_rare(tog_id):
+
+    print(f"Выберите редкость '{types_of_goods[tog_id - 1]}':")
+    for i, rare in enumerate(rares[tog_id - 1]):
+        print(f"{i + 1}. {rare}")
+def view_items(rare_id):
+    print(f"Вещи'{rares[selected_tog - 1][rare_id - 1]}':")
+    for i, item in enumerate(items[rare_id - 1]):
+        print(f"{i + 1}. {item}")
+def add_to_storage(tog_id, rare_id, item_id):
+    tog = types_of_goods[tog_id - 1]
+    rare = rares[tog_id - 1][rare_id - 1]
+    item = items[rare_id - 1][item_id - 1]
+    storage.append((tog, rare, item))
+    print(f"Вещь '{rare}' ({item}) добавлен в хранилище\n\n")
+def remove_from_storage(id):
+    object = storage.pop(id)
+    print(f"вещь '{object[1]}' ({object[2]}) удалена из хранилища\n\n")
+def view_storage():
+    if not storage:
+        print("Хранилище пусто")
+    else:
+        print("Вещи в хранилище\n")
+        for i, object in enumerate(storage):
+            print(f"{i + 1}. {object[0]}: {object[1]} ({object[2]}) ")
+while True:
+    view_tog()
+    selected_tog = int(input("Выберите тип вещей: "))
+    
+    if selected_tog < 1 or selected_tog > len(types_of_goods):
+        print("Некорректный id типа вещей\n\n\n")
+        continue
+
+    view_rare(selected_tog)
+    selected_rare = int(input("Выберите редкость вещей:"))
+
+    if selected_rare < 1 or selected_rare > len(rares[selected_tog - 1]):
+        print("Некорректный тип редкости\n\n\n")
+        continue
+    elif selected_rare == 2:
+        print("Ошибка№!%!\n\n\n\n\n\n\n")
+        break
+
+    view_items(selected_rare)
+    selected_item = int(input("Выберите вещь: "))
+
+    if selected_item < 1 or selected_item > len(items[selected_rare - 1]):
+        print("Некорректный номер вещи\n\n\n")
+        continue
+
+    add_to_storage(selected_tog, selected_rare, selected_item)
+    view_storage()
+
+    end = input("Юный Герой тебе будет достаточно и одной вещи:\n")
+    if end.lower() == "хорошо":
+        print("Вещь приобретена! Юный Герой, да прибудет с тобой Сила!")
+        break
+    else:
+        print("НАГЛЕЦ, уходи отсюда!!")
+        break
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
