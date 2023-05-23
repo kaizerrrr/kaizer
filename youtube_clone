@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>YouTube</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-menu">
+      <i class="fa-solid fa-bars"></i>
+      
+      <img
+        src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png
+        alt="logo">
+    </div>
+    <form class="nav-search" action="">
+      <div class=nav-search-inputs>
+        
+        <input type="text" value="Введите запрос">
+        
+        
+        
+        <button type="submit" class="fa-solid fa-magnifying-glass" style="color: #403535;"></button> 
+       
+
+        
+
+      </div>
+      <i class="fa-solid fa-microphone"></i>
+    </form>
+    <div class="nav-profile">
+      <i class="fa-solid fa-upload"></i>
+      <i class="fa-regular fa-bell"></i>
+      <span>A</span>
+    </div>
+  </nav>
+  <div class="content-container">
+    <aside>
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+      <!-- ДОДЕЛАТЬ BR как разделитель -->
+      <br class="aside-line" />
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <span>Главная</span>
+      </div>
+    </aside>
+    <main>
+      <div class="main-filter">
+        <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
+      </div>
+      <div class="main-videos">
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
