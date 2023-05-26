@@ -4,41 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>YouTube</title>
+  <title>Title</title>
 </head>
 
 <body>
   <nav>
     <div class="nav-menu">
       <i class="fa-solid fa-bars"></i>
-      
       <img
-        src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png
+        src="https://grin.co/wp-content/uploads/2020/08/youtube-icon-logo-7.png"
         alt="logo">
     </div>
     <form class="nav-search" action="">
       <div class=nav-search-inputs>
-        
-        <input type="text" value="Введите запрос">
-        
-        
-        
-        <button type="submit" class="fa-solid fa-magnifying-glass" style="color: #403535;"></button> 
-       
-
-        
-
+        <input type="text">
+        <input type="submit" value=" " >
       </div>
-      <i class="fa-solid fa-microphone"></i>
+      <div class="microdiv">
+        <i class="mic fa-solid fa-microphone"></i>
+      </div>
+      
     </form>
     <div class="nav-profile">
       <i class="fa-solid fa-upload"></i>
       <i class="fa-regular fa-bell"></i>
-      <span>A</span>
+      <i class="fa-regular fa-user" style="color: #000000;"></i>
     </div>
   </nav>
   <div class="content-container">
@@ -48,26 +42,39 @@
         <span>Главная</span>
       </div>
       <div class="link">
-        <i class="fa-solid fa-house"></i>
-        <span>Главная</span>
+        <i class="fa-brands fa-shirtsinbulk" style="color: #000000;"></i>
+        <span>Shorts</span>
       </div>
       <div class="link">
-        <i class="fa-solid fa-house"></i>
-        <span>Главная</span>
+        <i class="fa-solid fa-tag" style="color: #000000;"></i>
+        <span>Подписки</span>
       </div>
       <!-- ДОДЕЛАТЬ BR как разделитель -->
-      <br class="aside-line" />
+      <hr class="aside-line"/>
+      
       <div class="link">
-        <i class="fa-solid fa-house"></i>
-        <span>Главная</span>
+        <i class="fa-solid fa-photo-film" style="color: #070709;"></i>
+        <span>Библиотека</span>
       </div>
       <div class="link">
-        <i class="fa-solid fa-house"></i>
-        <span>Главная</span>
+        <i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i>
+        <span>История</span>
       </div>
       <div class="link">
-        <i class="fa-solid fa-house"></i>
-        <span>Главная</span>
+        <i class="fa-solid fa-closed-captioning" style="color: #000000;"></i>
+        <span>Ваши видео</span>
+      </div>
+      <div class="link">
+        <i class="fa-regular fa-clock" style="color: #000000;"></i>
+        <span>Смотреть позже</span>
+      </div>
+      <div class="link">
+        <i class="fa-regular fa-thumbs-up" style="color: #020203;"></i>
+        <span>Понравившиеся</span>
+      </div>
+      <div class="link">
+        <i class="fa-solid fa-layer-group" style="color: #000000;"></i>
+        <span>Плейлисты</span>
       </div>
     </aside>
     <main>
@@ -75,8 +82,25 @@
         <span>Все</span>
         <span>Все</span>
         <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
+        <span>Все</span>
       </div>
       <div class="main-videos">
+        <div class="main-videos-element">
+          <img src="" alt="preview">
+          <div>
+            <img src="" alt="profile">
+            <div>
+              <h3>Title</h3>
+              <span>Channel</span>
+              <span>Views</span>
+            </div>
+          </div>
+        </div>
         <div class="main-videos-element">
           <img src="" alt="preview">
           <div>
